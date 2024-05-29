@@ -137,10 +137,23 @@
             echo "<p class='calc-result'>Result = " . 
             $value . "</p>";
         }
+
+        $fruits = array("Apple", "Banana", "Cherry");
+        $tasks = [
+            "laundry" => "Daniel",
+            "trash" => "Frida",
+            "vacuum" => "Basse",
+            "dishes" => "Bella"
+        ];
+        echo "<br>";
+
+        echo "laundry " . $tasks["laundry"];
+
+        echo "<br>";
         ?>
 
         
     </body>
-    
+    10:48 _ https://www.youtube.com/watch?v=D7mqV-p1kEc&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=10
     Fonte: https://www.youtube.com/watch?v=bOqTCDfc7Tk&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=6
 </html>
