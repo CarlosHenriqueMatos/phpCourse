@@ -4,11 +4,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content = "IE=edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "css/reset.css">
-        <link rel = "stylesheet" href = "css/main.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <title>javaScript Drag & DropFile Upload</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
         <title>Document</title>
     </head>
     <body>
+
+    <div class="drag-area" ondrop="upload_file(event)" ondragover="return false">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <button>Browse File</button>
+        <input type="file" name="file" id="file" hidden>
+    </div>
+    <script src="script.js"></script>
+
+
         <main>
             <form action = "<?php echo $_SERVER["PHP_SELF"]; ?>" method = "post">
                 <label for = "firstname">Firstname?</label>
@@ -26,7 +39,7 @@
                 </select>
                 <button type = "submit">Submit</button>
             </form>
-        </main>
+        
         <form action = "<?php echo htmlspecialchars($_SERVER
         ['PHP_SELF']); ?>" method = "post">;
             <input type="number" name="num01"
@@ -46,6 +59,8 @@
         $a = "Hello";
         $b = "World!";
         $c = $a . " " . $b;
+        $num01 = "0";
+        $num02 = "0";
         echo $c;
         echo "<br>";
         echo ((1 + 3) % 4);
@@ -136,7 +151,7 @@
             }
             echo "<p class='calc-result'>Result = " . 
             $value . "</p>";
-        }
+        };
 
         $fruits = array("Apple", "Banana", "Cherry");
         $tasks = [
@@ -152,8 +167,9 @@
         echo "<br>";
         ?>
 
-        
+    </main>
     </body>
-    10:48 _ https://www.youtube.com/watch?v=D7mqV-p1kEc&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=10
-    Fonte: https://www.youtube.com/watch?v=bOqTCDfc7Tk&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=6
+
 </html>
+https://www.youtube.com/watch?v=D7mqV-p1kEc&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=10;
+Fonte: https://www.youtube.com/watch?v=bOqTCDfc7Tk&list=PL0eyrZgxdwhwwQQZA79OzYwl5ewA7HQih&index=6;
